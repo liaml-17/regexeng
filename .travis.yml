@@ -1,0 +1,8 @@
+dist: xenial
+language: java
+jdk:
+  - openjdk11
+
+sudo: false
+
+script: "mvn test"
