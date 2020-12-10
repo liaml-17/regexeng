@@ -17,6 +17,6 @@ jobs:
         with:
           java-version: 1.8
       - name: Unit tests
-        run: mvn clean test -P dev -B
+        run: mvn -ntp clean test -P dev
       - name: Integration tests
-        run: mvn clean verify -P integration-test -B
+        run: mvn -ntp clean verify -P integration-test
